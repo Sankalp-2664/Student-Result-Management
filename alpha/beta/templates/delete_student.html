@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Student</title>
+</head>
+<body>
+    <h1>Delete a Student</h1>
+
+    <!-- Form to delete a student by student_id -->
+    <form method="POST" action="">
+        {% csrf_token %}
+        <input type="text" name="student_id" placeholder="Enter Student ID to Delete" required>
+        <button type="submit">Delete Student</button>
+    </form>
+
+    {% if message %}
+        <p>{{ message }}</p> <!-- Display success or error message -->
+    {% endif %}
+</body>
+</html>

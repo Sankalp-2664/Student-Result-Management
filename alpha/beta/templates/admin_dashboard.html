@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .dashboard-container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome to Admin Dashboard</h1>
+        <ul>
+            <li><a href="http://127.0.0.1:8000/admin_add_student/" class="button">Add New Student</a></li>
+            <li><a href="http://127.0.0.1:8000/admin_delete_student/" class="button">Delete Student</a></li>
+            <li><a href="http://127.0.0.1:8000/student_list/" class="button">View Students</a></li>
+            <!-- <li><a href="#" class="button">Add New Subject</a></li> -->
+            <li><a href="http://127.0.0.1:8000/view_subjects/" class="button">View Subjects</a></li>
+        </ul>
+    </div>
+</body>
+</html>

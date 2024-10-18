@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Student Details</title>
+</head>
+<body>
+    <h1>Search for Student Details</h1>
+
+    <!-- Search form for student_id -->
+    <form method="GET" action="">
+        <input type="text" name="student_id" placeholder="Enter Student ID" required>
+        <button type="submit">Search</button>
+    </form>
+
+    {% if student %}
+        <h2>Details for {{ student.first_name }} {{ student.last_name }}</h2>
+        <p>Student ID: {{ student.student_id }}</p>
+        <p>Class: {{ student.class_name }}</p>
+        <!-- Add more fields as needed -->
+    {% elif student_id %}
+        <p>No student found with ID {{ student_id }}</p>
+    {% endif %}
+</body>
+</html>
